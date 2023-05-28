@@ -1,0 +1,76 @@
+:root {
+    --white-color: #fff;
+    --back-color: #000;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* font-size 62.5% mặc định trình duyệt là 10px */
+/* lấy font-size 1rem=10px, 1.2rem=12px */
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Tất cả màn hình có kích thước lớn hơn 1200px thì kích thước tối đa
+của class grid là 1200px. Với màn hình nhỏ hơn 1200px thì max-width sẽ giảm 
+kích thước grid bằng kích thước màn hình. */
+/* margin là căn giữa khối này */
+
+
+.grid {
+    width: 1487px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.grid-col-2 {
+    width: 16.6667%;
+    padding-right: 5px;
+    padding-left: 5px;
+
+
+}
+
+.grid-col-10 {
+    width: 83.333%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.grid-col-2-4 {
+    width: 20%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.grid-col-3 {
+    width: 25%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.grid-col-6 {
+    width: 50%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.boder-bt-3 {
+    border-bottom: 3px solid #1b74e4;
+    color: #1b74e4;
+}
